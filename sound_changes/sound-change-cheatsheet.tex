@@ -1,18 +1,10 @@
 \documentclass[a4paper,11pt,article,oneside]{memoir}
-\usepackage{fontspec}
-\usepackage{amsmath} % a pretty standard package to enlarge your inventory of symbols
-\usepackage{amssymb} % another common package for symbols
-\usepackage[hidelinks]{hyperref} % enables hyperlinks in your document (no worries -- they show up only on the screen. When you print a hard copy, the colored boxes aren't there)
-\usepackage{url} % helps typeset URLs properly, typically with the command \url
-\usepackage[margin=.5in]{geometry} % page layout
-\usepackage{booktabs} % creates beautiful and professional tables
-\usepackage{multirow}
-\usepackage{multicol}
-\usepackage{textcomp}
-\usepackage{expex}
-\usepackage{threeparttable}
-\usepackage[calc,english]{datetime2}
-\usepackage{bookmark}
+\input{../preamble/packages}
+
+\input{utils/eurodate.tex}
+\input{utils/lingstyles.tex}
+
+\lingset{lingstyle=default}
 
 \setmainfont{Charis SIL}[CharacterVariant=43:1]
 
@@ -20,7 +12,9 @@
 \setlength{\parskip}{1ex}
 %\linespread{1.1}
 
-\input{../preamble_misc.tex}
+\input{../preamble/macros.tex}
+\input{../utils/ipa_macros.tex}
+\input{../utils/misc_macros.tex}
 
 \title{\langname{} Sound Changes:\\{\Large A Cheat Sheet}}
 \author{Bethany E. Toma}
