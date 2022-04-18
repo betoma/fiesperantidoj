@@ -1,0 +1,108 @@
+\documentclass[a4paper,11pt,article,oneside]{memoir}
+\usepackage{fontspec}
+\usepackage{amsmath} % a pretty standard package to enlarge your inventory of symbols
+\usepackage{amssymb} % another common package for symbols
+\usepackage[hidelinks]{hyperref} % enables hyperlinks in your document (no worries -- they show up only on the screen. When you print a hard copy, the colored boxes aren't there)
+\usepackage{url} % helps typeset URLs properly, typically with the command \url
+\usepackage[margin=.5in]{geometry} % page layout
+\usepackage{booktabs} % creates beautiful and professional tables
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{expex}
+\usepackage{threeparttable}
+\usepackage[calc,english]{datetime2}
+\usepackage{bookmark}
+
+\setmainfont{Charis SIL}[CharacterVariant=43:1]
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1ex}
+%\linespread{1.1}
+
+\input{../preamble_misc.tex}
+
+\title{\langname{} Sound Changes:\\{\Large A Cheat Sheet}}
+\author{Bethany E. Toma}
+\date{\today}
+
+\counterwithout{section}{chapter}
+\maxsecnumdepth{section}
+
+\begin{document}
+
+\maketitle
+
+While \langname{} is distinct enough from its Esperanto ancestor to be reasonably considered a separate language at this juncture, its orthography does not reflect this. While syntactic and semantic changes are reflected to a fairly reasonable extent in the orthography, phonological changes are not accounted for. As a reult, to reasonably approximate the pronunciation of a \langname{} word from how it is written, one must understand which sound changes have occurred from the `original' (hereafter `Zamenhofian') Esperanto. 
+
+Note that some sound changes listed apply only to the Lowlands dialect but not to the Highlands dialect, or vice-versa. This is indicated when it is the case.
+
+\section*{Zamenhofian Esperanto Orthography}
+
+The Esperanto pronunciation of a word tends to be roughly equivalent to its spelling in IPA, with the following exceptions:
+\begin{center}
+\begin{threeparttable}
+\begin{tabular}{ccccccccc}
+    \ortho{c} & \ortho{\^{c}} & \ortho{\^{g}} & \ortho{\^{h}}\tnote{1} & \ortho{\^{j}} & \ortho{\^{s}} & \ortho{r} & \ortho{\u{u}} & \ortho{v}\\[0.2cm]
+    \phipa{t\tiebar s} & \phipa{t\tiebar\esh} & \phipa{d\tiebar\ezh} & \phipa{x} & \phipa{\ezh} & \phipa{\esh} & \phipa{\alvrap} & \phipa{w} & \phipa{\labrox}
+\end{tabular}
+\begin{tablenotes}
+    \item[1] This phoneme is only retained in a very few words at this point (e.g., \espq{eĥo}, \espq{ĥaoso}) and is elsewhere generally replaced with variants with k or h.
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+
+Primary stress falls on the penultimate syllable, and secondary stress \emph{tends} to fall on alternating syllables preceding it.
+
+\section{Sound Changes}
+
+\subsection{0--100 AMC}
+
+\input{sound_change_stages/amc_000.tex}
+
+\subsection{100--200 AMC}
+
+\input{sound_change_stages/amc_100.tex}
+
+\subsection{200--300 AMC}
+
+\input{sound_change_stages/amc_200.tex}
+
+\subsection{300--400 AMC}
+
+\input{sound_change_stages/amc_300.tex}
+
+\subsection{400--500 AMC}
+
+\input{sound_change_stages/amc_400.tex}
+
+\subsection{500--600 AMC}
+
+\input{sound_change_stages/amc_500.tex}
+
+\subsection{600--700 AMC}
+
+\input{sound_change_stages/amc_600.tex}
+
+\subsection{700--800 AMC}
+
+\input{sound_change_stages/amc_700.tex}
+
+\subsection{800--900 AMC}
+
+\input{sound_change_stages/amc_800.tex}
+
+\subsection{900--1000 AMC}
+
+\input{sound_change_stages/amc_900.tex}
+
+\section{Sparky's Transcription}
+
+I'll probably make an in-world orthography later, but regardless of whether I do, I need a roughly phonetic or phonemic transcription which I can use to not have to constantly write in IPA. That'll go here once I actually make it lol.
+
+\clearpage
+\section{Pronunciation Example}
+
+\input{lords_prayer.tex}
+
+\end{document}

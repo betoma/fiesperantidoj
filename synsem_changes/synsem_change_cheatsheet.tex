@@ -1,0 +1,78 @@
+\documentclass[a4paper,11pt,article,oneside]{memoir}
+\usepackage{fontspec}
+\usepackage{amsmath} % a pretty standard package to enlarge your inventory of symbols
+\usepackage{amssymb} % another common package for symbols
+\usepackage[hidelinks]{hyperref} % enables hyperlinks in your document (no worries -- they show up only on the screen. When you print a hard copy, the colored boxes aren't there)
+\usepackage{url} % helps typeset URLs properly, typically with the command \url
+\usepackage[margin=.5in]{geometry} % page layout
+\usepackage{booktabs} % creates beautiful and professional tables
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{expex}
+\usepackage{tablefootnote}
+\usepackage[calc,english]{datetime2}
+\usepackage{bookmark}
+
+\setmainfont{Charis SIL}[CharacterVariant=43:1]
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1ex}
+%\linespread{1.1}
+
+\input{../preamble_misc.tex}
+
+\title{\langname{} Morphosyntactic Changes:\\{\Large A Cheat Sheet}}
+\author{Bethany E. Toma}
+\date{\today}
+
+\counterwithout{section}{chapter}
+\maxsecnumdepth{section}
+
+\begin{document}
+
+\maketitle
+
+\section{Morphosyntactic \& Semantic Changes}
+
+\subsection{0--100 AMC}
+
+\input{synsem_stages/amc_000.tex}
+
+\subsection{100--200 AMC}
+
+\input{synsem_stages/amc_100.tex}
+
+\subsection{200--300 AMC}
+
+\input{synsem_stages/amc_200.tex}
+
+\subsection{300--400 AMC}
+
+\input{synsem_stages/amc_300.tex}
+
+\subsection{400--500 AMC}
+
+\input{synsem_stages/amc_400.tex}
+
+\subsection{500--600 AMC}
+
+\input{synsem_stages/amc_500.tex}
+
+\subsection{600--700 AMC}
+
+\input{synsem_stages/amc_600.tex}
+
+\subsection{700--800 AMC}
+
+\input{synsem_stages/amc_700.tex}
+
+\subsection{800--900 AMC}
+
+\input{synsem_stages/amc_800.tex}
+
+\subsection{900--1000 AMC}
+
+\input{synsem_stages/amc_900.tex}
+
+\end{document}
