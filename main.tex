@@ -1,0 +1,67 @@
+\documentclass[a4paper,11pt,twoside,openright]{memoir}
+\input{preamble/packages.tex}
+\input{utils/eurodate.tex}
+\input{utils/lingstyles.tex}
+\input{preamble/macros.tex}
+\input{utils/ipa_macros.tex}
+\input{utils/misc_macros.tex}
+\input{preamble/titlepages.tex}
+
+%\setmainfont{Charis SIL}[CharacterVariant=43:1]
+\setmainfont{Junicode}
+
+%\setlength{\parindent}{2em}
+\nonzeroparskip
+
+\maxsecnumdepth{subsection}
+
+\makeatletter
+\addtopsmarks{Ruled}{}{%
+    \clearmark{chapter}
+    \clearmark{section}
+    \createmark{part}{left}{shownumber}{}{. \space}%
+    \createmark{chapter}{right}{shownumber}{\@chapapp\ }{. \space}%
+}
+\makeatother
+\pagestyle{Ruled}
+
+\lingset{lingstyle=default}
+
+\begin{document}
+
+\begin{titlingpage}
+\titleTMB
+\clearpage
+\end{titlingpage}
+
+\frontmatter
+
+\chapter{Preamble on Language Creation Philosophy}
+\cleardoublepage
+
+\tableofcontents
+
+\mainmatter
+\setsecnumdepth{chapter}
+
+\part{History of \planetadjective{} Settlement and Migration}
+
+\chapter{Test}
+
+This chapter is a placeholder. \engma{} \Engma{}
+
+\lipsum[4-10]
+
+\section{LalaLipsum}
+\lipsum[11-17]
+
+\part{Grammar of \onelangname}
+
+\include{xelok/gram}
+
+\part{A Detailed Timeline of Linguistic Changes}
+\setsecnumdepth{part}
+
+\include{timeline/timeline}
+
+\end{document}

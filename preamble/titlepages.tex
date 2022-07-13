@@ -1,0 +1,39 @@
+\newlength{\drop}% for my convenience
+\titlingpageend{\clearforchapter}{\clearforchapter}
+
+%---MAIN---%
+\newcommand*{\titleTMB}{\begingroup% Three Men in a Boat
+\drop=0.1\textheight
+\centering
+\settowidth{\unitlength}{\LARGE LANGUAGES OF \planetname{}}
+\vspace*{\baselineskip}
+{\large\scshape Bethany E. Toma}\\[\baselineskip]
+\rule{\unitlength}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+\rule{\unitlength}{0.4pt}\\[\baselineskip]
+{\LARGE LANGUAGES OF \MakeUppercase{\planetname{}}}\\[\baselineskip]
+{\itshape a comparative grammar of local Esperanto descendants}\\[0.2\baselineskip]
+\rule{\unitlength}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\unitlength}{1.6pt}\\[\baselineskip]
+{\large\scshape complete edition}\par
+\vfill
+{\large\scshape a conlanging project}\\[\baselineskip]
+{\small\scshape \today}\par
+\vspace*{\drop}
+\endgroup}
+
+%---TITLEPAGE---%
+\newcommand*{\titleAM}{\begingroup%
+\drop = 0.12\textheight
+\centering
+\vspace*{\drop}
+{\Huge A GRAMMAR}\\[\baselineskip]
+{\Large OF}\\[\baselineskip]
+{\Huge \langname{}}\\[\baselineskip]
+{\scshape with diachronic progression}\\
+{\scshape from Zamenhofian Esperanto}\\
+{\scshape to the modern language}\\[2.5\drop]
+
+{\small\scshape Bethany E. Toma}\par
+{\small\scshape \today}\par
+\vfill\null
+\endgroup}
